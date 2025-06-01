@@ -1,57 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf5; /* Branco suave */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #4e342e; /* Marrom escuro */
+    }
 
-:root{
-    --fonte-family:'Playfair Display', serif;
-    --bg-color: #B99B6B;
-    --primary-color: #E8F9FD;
-}
+    h1 {
+      color: #795548; /* Marrom médio */
+      margin-bottom: 1rem;
+    }
+
+    .title{
+       align-items: center;
+       font-size: 3rem;
+      justify-content: center;
+    }
+
+    #startButton {
+      background-color: #d4af37; /* Dourado */
+      color: #ffffff;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
 
 
-body{
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
-    font-family: var(--fonte-family);
-}
-
-h1{
-    font-size: 4em;
-}
-
-h2{
-    font-size: 3em;
-}
-
-h3{
-    font-size: 2em;
-    margin-top: 20px;
-}
+    #stopButton {
+      background-color: #FF0000;
+      color: #000;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
 
 
-.mensagem{
-    font-size: 1.5em;
-    margin-top: 40px;
-}
+    #startButton:hover {
+      background-color: #b88a2c;
+    }
 
-.box{
-    border: 2px solid var(--primary-color);
-    display: inline-block;
-    font-size: 4em;
-    padding: 10px;
-    margin: 20px;
-}
+    #chute {
+      margin-top: 2rem;
+      text-align: center;
+    }
 
-.botao-novamente{
-    padding: 8px 15px;
-    border: 0;
-    background: var(--primary-color);
-    border-radius: 16px;
-    margin-top: 25px;
-    cursor: pointer;
-}
+    .box {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 1rem;
+      background-color: #fceabb; /* tom claro/dourado */
+      border-radius: 8px;
+      font-weight: bold;
+      color: #3e2723; /* Marrom escuro */
+      border: 2px solid #d4af37;
+    }
