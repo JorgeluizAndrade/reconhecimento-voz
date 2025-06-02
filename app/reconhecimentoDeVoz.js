@@ -1,4 +1,4 @@
-const elementoChute = document.getElementById("chute");
+const elementoFrase = document.getElementById("frase");
 const startButton = document.getElementById("startButton");
 const stopButton = document.getElementById("stopButton");
 const downloadButton = document.getElementById("downloadButton");
@@ -25,7 +25,7 @@ function onSpeak(e) {
 }
 
 function atualizarTela(texto) {
-  elementoChute.innerHTML = `
+  elementoFrase.innerHTML = `
     <div>Transcrição ao vivo:</div>
     <pre class="box">${texto}</pre>
   `;
