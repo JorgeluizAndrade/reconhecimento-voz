@@ -19,4 +19,11 @@ Como usar
    ```bash
    git clone https://github.com/seu-usuario/anotaqui.git
 
-Logo após rode com live server no vs code. Já já implemento vite!!
+
+2. Instale as Dependências   
+   ```bash
+   npm i
+
+3. Rode no servidor   
+   ```bash
+   npm run dev
